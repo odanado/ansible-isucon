@@ -4,7 +4,7 @@
   tasks:
     - yum: name=python-setuptools
     - command: "easy_install pip"
-    - pip: name: supervisor
+    - command: "pip install supervisor"
     - shell: |
         cp /tmp/isucon4/qualifier/ami/files/supervisord.init /etc/init.d/supervisord
         chmod a+x /etc/init.d/supervisord
